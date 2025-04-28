@@ -1,4 +1,4 @@
-from langchain.core.messages import HumanMessage
+from langchain_core.messages import HumanMessage
 from typing import List
 from dataclasses import dataclass
 

@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import json
 from langchain_core.messages import HumanMessage, AIMessage
-from Pages.backend import PythonChatbot, InputData
+from backend import PythonChatBot, InputData
 import pickle
 
 # Create uploads directory if it doesn't exist
@@ -127,7 +127,7 @@ with tab2:
 
     if 'selected_files' in st.session_state and st.session_state['selected_files']:
         if 'visualisation_chatbot' not in st.session_state:
-            st.session_state.visualisation_chatbot = PythonChatbot()
+            st.session_state.visualisation_chatbot = PythonChatBot()
         chat_container = st.container(height=500)
         with chat_container:
             # Display chat history with associated images
