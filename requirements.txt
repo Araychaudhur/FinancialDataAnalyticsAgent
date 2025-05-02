@@ -4,6 +4,7 @@ langchain-core
 scikit-learn
 plotly
 langchain
-langgraph
+langgraph==0.2.76
 langchain-openai
 dotenv
+langchain_experimental
